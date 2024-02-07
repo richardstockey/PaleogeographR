@@ -39,7 +39,7 @@ for(file.no in 1:length(list)){
 
 }
 
-save(file = "~/PaleogeographR/Scotese_1deg_list.rda", df_sum, ages)
+save(file = "~/PaleogeographR/Scotese_1deg_list.rda", df_sum)
 
-
+save(file = "~/PaleogeographR/Scotese_1deg_ages.rda", ages)
 
