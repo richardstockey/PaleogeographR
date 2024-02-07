@@ -11,9 +11,4 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     dplyr,
-    ggplot2,
-    ggspatial,
-    reshape2,
-    RNetCDF,
-    sf,
-    sp
+    ggplot2
