@@ -5,7 +5,8 @@
 ###################################################
 # full comments to follow...
 
-scotese.map.simple <- function(age # Age in millions of years ago
+scotese.map.simple <- function(age, # Age in millions of years ago
+                       levels = 12,
                        # min.value = -6000,
                        # max.value = 6000,
                        # intervals = 2000,
@@ -30,9 +31,9 @@ scotese.map.simple <- function(age # Age in millions of years ago
   # box()
   max <- max(df)
   min <- min(df)
-  steps <- (max-min)/20
+  steps <- (max-min)/levels
   levels_vec <- seq(min, max, steps)
-  filled.contour(x = -180:180, y = -90:90, z = df, color.palette = function(n) rev(paletteer::paletteer_c("grDevices::Earth", 20)), xlab = "Longitude (°)", ylab = "Latitude (°)", levels = levels_vec)
+  filled.contour(x = -180:180, y = -90:90, z = df, color.palette = function(n) rev(paletteer::paletteer_c("grDevices::Earth", levels)), xlab = "Longitude (°)", ylab = "Latitude (°)", levels = levels_vec)
 
 }
 
