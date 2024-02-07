@@ -18,9 +18,6 @@ scotese.map.simple <- function(age # Age in millions of years ago
   # still need to come up with a good option for a sphere...
   # dims is dimensions of netcdf being read in - this is set to 3d by default
 
-  library(dplyr)
-  library(paletteer)
-
   #load("~/PaleogeographR/Scotese_1deg_list.Rdata")
 
   closest.age.step <- which.min(abs(age - ages))
@@ -29,13 +26,10 @@ scotese.map.simple <- function(age # Age in millions of years ago
 
   df <- df_sum[[closest.age.step]]
 
-  image(x = -180:180, y = -90:90, z = df, col = rev(paletteer_c("grDevices::Earth", 30)), xlab = "Longitude (°)", ylab = "Latitude (°)")
-  box()
+  # image(x = -180:180, y = -90:90, z = df, col = rev(paletteer_c("grDevices::Earth", 30)), xlab = "Longitude (°)", ylab = "Latitude (°)")
+  # box()
 
-  filled.contour(x = -180:180, y = -90:90, z = df, color.palette = function(n) rev(paletteer_c("grDevices::Earth", 13)), xlab = "Longitude (°)", ylab = "Latitude (°)")
-
-
- # contour(df, add = TRUE)
+  filled.contour(x = -180:180, y = -90:90, z = df, color.palette = function(n) rev(paletteer_c("grDevices::Earth", 11)), xlab = "Longitude (°)", ylab = "Latitude (°)", nlevels = 14)
 
 }
 
