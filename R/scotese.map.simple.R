@@ -31,7 +31,7 @@ scotese.map.simple <- function(age # Age in millions of years ago
   max <- max(df)
   min <- min(df)
   steps <- (max-min)/16
-  levels_vec <- seq(min, max, 500)
+  levels_vec <- seq(min, max, steps)
   filled.contour(x = -180:180, y = -90:90, z = df, color.palette = function(n) rev(paletteer::paletteer_c("grDevices::Earth", 16)), xlab = "Longitude (°)", ylab = "Latitude (°)", levels = levels_vec)
 
 }
