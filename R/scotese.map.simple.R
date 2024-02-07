@@ -6,7 +6,7 @@
 # full comments to follow...
 
 scotese.map.simple <- function(age, # Age in millions of years ago
-                       levels = 12,
+                       levels = 12
                        # min.value = -6000,
                        # max.value = 6000,
                        # intervals = 2000,
