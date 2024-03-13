@@ -16,7 +16,7 @@ scotese.map.data.gg <- function(age # Age in millions of years ago
 
   closest.age.step <- which.min(abs(age - ages))
 
-  closest.age <- ages_gg[closest.age.step]
+  closest.age <- ages[closest.age.step]
 
   df <- df_sum_gg[[closest.age.step]]
 
