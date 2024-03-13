@@ -1,1 +1,2 @@
 load("/Users/rgs1e22/PaleogeographR/data/Scotese_1deg_list.rda")
+load("/Users/rgs1e22/PaleogeographR/data/Scotese_1deg_ages_ggplot2.rda")
