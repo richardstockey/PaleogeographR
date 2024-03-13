@@ -1,10 +1,10 @@
 ###################################################
-# scotese.map.data.R
+# scotese.map.data.gg.R
 # Rich Stockey 20240313
 ###################################################
 # full comments to follow...
 
-scotese.map.data <- function(age # Age in millions of years ago
+scotese.map.data.gg <- function(age # Age in millions of years ago
                        ){
 
   # other projection options include:
