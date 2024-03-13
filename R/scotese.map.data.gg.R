@@ -14,7 +14,7 @@ scotese.map.data <- function(age # Age in millions of years ago
 
   #load("~/PaleogeographR/Scotese_1deg_list.Rdata")
 
-  closest.age.step <- which.min(abs(age - ages))
+  closest.age.step <- which.min(abs(age - ages_gg))
 
   closest.age <- ages_gg[closest.age.step]
 
