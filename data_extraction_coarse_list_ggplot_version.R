@@ -63,3 +63,5 @@ save(file = "~/PaleogeographR/Scotese_1deg_list_ggplot2.rda", df_sum_gg)
 
 save(file = "~/PaleogeographR/Scotese_1deg_ages_ggplot2.rda", ages_gg)
 
+usethis::use_data(df_sum_gg)
+usethis::use_data(ages_gg)
